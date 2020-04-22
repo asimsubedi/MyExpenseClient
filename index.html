@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Expense App</title>
+
+    <link href="assets/css/bootstrap-4.3.1.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION TOP -->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">MyExpenseApp</a>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Sign out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ALL BODY -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- SIDEBAR NAVIGATION -->
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span class="icon">&#9862;</span>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="icon">&#9783;</span>
+                                View All Expenses
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Reports</span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Current month
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Last quarter
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Social engagement
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Year-end sale
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <!-- HEADER OF PAGE -->
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Total Expenses: $1000.00</h1>
+                </div>
+
+                <!-- CONTENT OF PAGE -->
+                <div class="panel panel-primary">
+                    <h3>Add Your Expense:</h3>
+                    
+                    <form id="expenseAddForm">
+                        <div class="form-row">
+                            <div class="form-group col-sm-3 col-md-2">
+                                <input type="text" class="form-control" name="amount" placeholder="Amount">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="text" class="form-control" name="description" placeholder="Description">
+                            </div>
+                            <div class="form-group col-sm-3 col-md-2">
+                                <select class="form-control" name="category" required>
+                                    <option value="">Income/Expense</option>
+                                    <option value="Income">Income</option>
+                                    <option value="Expense">Expense</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-2 col-md-2">
+                                <button class="btn btn-secondary" id="submitForm">ADD +</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <hr>
+                    <div class="col-md-6">
+                        <ul class=" list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <code class="text-primary">$20.00</code> Income from tutoring child
+                                <span class="badge badge-primary badge-pill">Income</span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <code class="text-danger">$200.00</code> Bought a camera
+                                 <span class="badge badge-danger badge-pill">Expense</span>
+                              </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+
+
+    <script src="/resources/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap-popper-1.16.min.js"></script>
+    <script src="assets/js/bootstrap-4.4.1.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
